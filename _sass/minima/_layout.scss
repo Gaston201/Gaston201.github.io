@@ -27,6 +27,7 @@
   float: right;
   line-height: 56px;
 
+
   .menu-icon {
     display: none;
   }
@@ -37,7 +38,7 @@
 
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
-      margin-right: 20px;
+      margin-right: 25px;
     }
   }
 
@@ -46,7 +47,7 @@
     top: 9px;
     right: $spacing-unit / 2;
     background-color: $background-color;
-    border: 1px solid $grey-color;
+    border: 1px solid $blue-color;
     border-radius: 5px;
     text-align: right;
 
@@ -60,7 +61,7 @@
       text-align: center;
 
       > svg path {
-        fill: $grey-color;
+        fill: $blue-color;
       }
     }
 
@@ -166,7 +167,8 @@
 }
 
 .page-heading {
-  font-size: 20px;
+  font-size: 30px;
+  color: $grey-color;
 }
 
 .post-list {
@@ -195,6 +197,7 @@
  */
 .post-header {
   margin-bottom: $spacing-unit;
+  color: $grey-color;
 }
 
 .post-title {
@@ -233,4 +236,32 @@
       font-size: 18px;
     }
   }
+}
+
+/**
+  * Home
+  */
+.home-heading {
+    font-size: 50px;
+    color: $grey-color;
+}
+.home-content {
+    margin-bottom: 50px;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    border-bottom-style: solid;
+    border-color: $blue-color;
+}
+
+/**
+  * Blog
+  */
+.blog-posts {
+    max-height: 192px;
+    line-height: 150%;
+    overflow: hidden;
+
+}
+.dsq-app1 {
+    margin-bottom: 500px;
 }
