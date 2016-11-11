@@ -1,0 +1,32 @@
+---
+layout: opengraph
+---
+
+<div class="home">
+
+    <h1 class="home-heading">Blog posts</h1>
+
+    <div class="home-content">
+        {{ content }}
+    </div>
+
+    <h1 class="page-heading">Recent posts</h1>
+
+    <ul class="post-list">
+        {% for post in site.posts %}
+        <li class="blog-posts">
+
+            <h2>
+                <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+            </h2>
+
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+            {{ post.content }}
+
+
+        </li>
+        {% endfor %}
+    </ul>
+
+</div>
