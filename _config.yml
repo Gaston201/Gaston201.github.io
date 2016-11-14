@@ -16,7 +16,7 @@
 title: LocalHost404
 email: 	gb222fv@student.lnu.se
 description: > # this means to ignore newlines until "baseurl:"
-  Awesome description!
+  <!-- Under development since 2016 -->
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://localhost:4000/" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  Gaston201
@@ -31,3 +31,5 @@ exclude:
   - Gemfile.lock
 
 enable_disqus: true
+
+author: gb222fv
