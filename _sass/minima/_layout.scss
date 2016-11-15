@@ -257,11 +257,30 @@
   * Blog
   */
 .blog-posts {
-    max-height: 192px;
+    max-height: 200px;
     line-height: 150%;
     overflow: hidden;
-
+    margin-top: 50px;
 }
 .dsq-app1 {
     margin-bottom: 500px;
+}
+.blog-continue {
+    color: $text-color-dark;
+    text-decoration: none;
+
+    margin-top: -20px;
+    padding-left: 40%;
+    padding-right: 40%;
+    display: block;
+    border-bottom: solid 1px;
+
+    &:visited {
+        color: $text-color-dark;
+    }
+
+    &:hover {
+        color: $blue-color;
+        text-decoration: none;
+    }
 }
