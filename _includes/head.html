@@ -11,10 +11,20 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
 
     <!-- Code for open graph -->
-    <meta property="og:site_name" content="LocalHost404">
-    <meta property="og:title" content={{post.title}} />
+    <meta property="og:site_name" content="{{site.title}}">
+
+    {% if page.title %}
+        <meta property="og:title" content="{{ page.title }}">
+    {% else %}
+        <meta property="og:title" content="{{ site.title }}">
+    {% endif %}
+
     <meta property="og:type" content="article" />
-    <meta property="og:url" content={{post.url}} />
+
+    {% if page.url %}
+    <meta property="og:url" content={{page.url}} />
+    {% endif %}
+
     <meta property="og:image" content="http://i.imgur.com/5cYXhWI.jpg" />
     <meta property="og:description" content="This isn't what you're looking for">
 </head>
