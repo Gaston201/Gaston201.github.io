@@ -13,9 +13,8 @@ layout: default
     <h1 class="page-heading">Most recent posts</h1>
 
     <ul class="post-list">
-        {% for post in site.posts limit:3 %}
+        {% for post in site.posts limit:2 %}
             <li>
-
                 <h2>
                     <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
                 </h2>
@@ -25,5 +24,7 @@ layout: default
             </li>
         {% endfor %}
     </ul>
+
+    <a class="home-continue" href="/blog/">Older posts</a>
 
 </div>

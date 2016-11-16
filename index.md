@@ -4,4 +4,6 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 ---
-Hello there! My name is Gaston and this is my website
+Hello there! My name is Gaston aka gb222fv and this is my website!
+
+If this is your first time here, you might want to read the <a href="/about">about</a> page.

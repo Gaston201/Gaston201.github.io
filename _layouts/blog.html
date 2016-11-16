@@ -10,8 +10,6 @@ layout: default
         {{ content }}
     </div>
 
-    <h1 class="page-heading">Recent posts</h1>
-
     <ul class="post-list">
         {% for post in site.posts %}
         <li class="blog-posts">
@@ -25,7 +23,11 @@ layout: default
             {{ post.content }}
 
         </li>
+        {% if post.picture %}
+        <a class="blog-continue" href="{{post.url | relative_url }}">See Full Picture</a>
+        {% else %}
         <a class="blog-continue" href="{{post.url | relative_url }}">Continue Reading</a>
+        {% endif %}
         {% endfor %}
     </ul>
 

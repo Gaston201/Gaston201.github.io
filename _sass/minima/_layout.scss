@@ -265,8 +265,9 @@
 .dsq-app1 {
     margin-bottom: 500px;
 }
-.blog-continue {
-    color: $text-color-dark;
+
+.continue {
+
     text-decoration: none;
 
     margin-top: -20px;
@@ -275,8 +276,27 @@
     display: block;
     border-bottom: solid 1px;
 
+
+}
+
+.blog-continue {
+    @extend .continue;
+    color: $text-color-dark;
     &:visited {
         color: $text-color-dark;
+    }
+
+    &:hover {
+        color: $blue-color;
+        text-decoration: none;
+    }
+}
+
+.home-continue {
+    @extend .continue;
+    color: $brand-color-dark;
+    &:visited {
+        color: $brand-color-dark;
     }
 
     &:hover {
